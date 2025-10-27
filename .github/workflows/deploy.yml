@@ -15,7 +15,7 @@ jobs:
     #   image: node:16
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb #mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: 127.0.0.1:27107 #mongodb #cluster0.03g3ivv.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: 127.0.0.1:27017 #mongodb #cluster0.03g3ivv.mongodb.net
       MONGODB_USERNAME: Root #${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: pass #${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
@@ -23,7 +23,7 @@ jobs:
       mongodb:
         image: mongo
         ports:
-          -27107:27107
+          -27017:27017
         env:
           MONGO_INITDB_ROOT_USERNAME: Root
           MONGO_INITDB_ROOT_PASSWORD: pass
