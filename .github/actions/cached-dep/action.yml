@@ -2,9 +2,9 @@ name: 'cached dependiences'
 description: 'Get the dependencies and cache them'
 inputs:
   caching:
-  description: 'wheater to add dep or not '
-  required: false
-  default: 'true'
+    description: 'wheater to add dep or not '
+    required: false
+    default: 'true'
 runs:
   using: 'composite'
   steps:
